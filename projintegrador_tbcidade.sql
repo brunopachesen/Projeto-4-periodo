@@ -18,6 +18,10 @@
 --
 -- Table structure for table `tbcidade`
 --
+create database projIntegrador;
+
+use projintegrador;
+
 
 DROP TABLE IF EXISTS `tbcidade`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
