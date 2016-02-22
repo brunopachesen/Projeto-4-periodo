@@ -11,23 +11,14 @@ package Bean;
  */
 public class CidadeBean {
     
-   private String idCidade;
+   private int idCidade;
    private String nome;
    private String estado;
 
     /**
      * @return the idCidade
      */
-    public String getIdCidade() {
-        return idCidade;
-    }
-
-    /**
-     * @param idCidade the idCidade to set
-     */
-    public void setIdCidade(String idCidade) {
-        this.idCidade = idCidade;
-    }
+ 
 
     /**
      * @return the nome
@@ -55,5 +46,19 @@ public class CidadeBean {
      */
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    /**
+     * @return the idCidade
+     */
+    public int getIdCidade() {
+        return idCidade;
+    }
+
+    /**
+     * @param idCidade the idCidade to set
+     */
+    public void setIdCidade(int idCidade) {
+        this.idCidade = idCidade;
     }
 }

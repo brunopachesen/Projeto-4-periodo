@@ -18,7 +18,7 @@ import java.sql.SQLException;
 public class Conexao {
     
     
-    public static void main (String []args){
+ public static void main (String []args){
         try {
             getConexao();
             System.out.println("Conectado ao Banco de Dados!!");
@@ -31,7 +31,7 @@ public class Conexao {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             return DriverManager.getConnection 
-        ("jdbc:mysql://localhost/projetobsiprog3", "root", "root");
+        ("jdbc:mysql://localhost/projintegrador", "root", "root");
         } catch (ClassNotFoundException e){
             throw new SQLDataException(e.getMessage());
         }
