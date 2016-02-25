@@ -59,10 +59,14 @@ public class jiCadAuto extends javax.swing.JInternalFrame {
         jLabel4.setText("Chassi");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, 20));
 
-        jButton1.setText("Salvar");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 70, -1));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botão salvar.png"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 90, -1));
 
-        jButton2.setText("Cancelar");
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botão cancelar.png"))); // NOI18N
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
         jPanel1.add(lbMensagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 200, 20));
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 140, -1));
