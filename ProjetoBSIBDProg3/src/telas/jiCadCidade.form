@@ -39,8 +39,8 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="30" max="32767" attributes="0"/>
+              <Component id="jPanel1" min="-2" pref="217" max="-2" attributes="0"/>
+              <EmptySpace pref="14" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -126,27 +126,33 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnSalvar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Salvar"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagens/bot&#xe3;o salvar.png"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnSalvarMouseReleased"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="30" y="150" width="74" height="-1"/>
+              <AbsoluteConstraints x="30" y="150" width="90" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="btnCancelar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Cancelar"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagens/bot&#xe3;o cancelar.png"/>
+            </Property>
+            <Property name="borderPainted" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnCancelarMouseReleased"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="130" y="150" width="-1" height="-1"/>
+              <AbsoluteConstraints x="150" y="150" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>

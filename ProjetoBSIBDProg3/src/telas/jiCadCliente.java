@@ -107,12 +107,16 @@ public class jiCadCliente extends javax.swing.JInternalFrame {
         cbCidade.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel1.add(cbCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 190, 80, -1));
 
-        btSalvar.setText("Salvar");
-        jPanel1.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, 70, -1));
+        btSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botão salvar.png"))); // NOI18N
+        btSalvar.setBorder(null);
+        btSalvar.setBorderPainted(false);
+        jPanel1.add(btSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, 90, -1));
 
-        btCancelar.setText("Cancelar");
-        jPanel1.add(btCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, -1, -1));
-        jPanel1.add(lbMensagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 160, 20));
+        btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botão cancelar.png"))); // NOI18N
+        btCancelar.setBorder(null);
+        btCancelar.setBorderPainted(false);
+        jPanel1.add(btCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, -1, -1));
+        jPanel1.add(lbMensagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 160, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -120,18 +124,18 @@ public class jiCadCliente extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 363, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        setBounds(0, 0, 410, 308);
+        setBounds(0, 0, 437, 332);
     }// </editor-fold>//GEN-END:initComponents
 
 

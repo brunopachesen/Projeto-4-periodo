@@ -100,21 +100,25 @@ public class jiCadCidade extends javax.swing.JInternalFrame {
         cbEstado.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione", "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" }));
         jPanel1.add(cbEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 100, -1));
 
-        btnSalvar.setText("Salvar");
+        btnSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botão salvar.png"))); // NOI18N
+        btnSalvar.setBorder(null);
+        btnSalvar.setBorderPainted(false);
         btnSalvar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 btnSalvarMouseReleased(evt);
             }
         });
-        jPanel1.add(btnSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 74, -1));
+        jPanel1.add(btnSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 90, -1));
 
-        btnCancelar.setText("Cancelar");
+        btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botão cancelar.png"))); // NOI18N
+        btnCancelar.setBorder(null);
+        btnCancelar.setBorderPainted(false);
         btnCancelar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 btnCancelarMouseReleased(evt);
             }
         });
-        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, -1, -1));
+        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, -1));
         jPanel1.add(lbMensagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 236, 21));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -130,8 +134,8 @@ public class jiCadCidade extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         setBounds(0, 0, 374, 272);

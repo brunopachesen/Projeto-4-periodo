@@ -32,19 +32,28 @@ public class jiPesCidade extends javax.swing.JInternalFrame {
         btPesquisar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tbPesqCidade = new javax.swing.JTable();
-        jComboBox1 = new javax.swing.JComboBox();
+        cbEstado = new javax.swing.JComboBox();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txCidade = new javax.swing.JTextField();
+        btCadastrar = new javax.swing.JButton();
+        btCancelar = new javax.swing.JButton();
+        btExcluir = new javax.swing.JButton();
 
         setClosable(true);
         setTitle("Pesquisa por Cidade");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("UF");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, -1, 20));
 
-        btPesquisar.setText("Pesquisar");
+        btPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botão pesquisar.png"))); // NOI18N
+        btPesquisar.setToolTipText("");
+        btPesquisar.setBorder(null);
+        btPesquisar.setBorderPainted(false);
+        jPanel1.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 70, 100, 30));
 
         tbPesqCidade.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -64,61 +73,47 @@ public class jiPesCidade extends javax.swing.JInternalFrame {
         jScrollPane1.setViewportView(tbPesqCidade);
         tbPesqCidade.getAccessibleContext().setAccessibleName("Resultado de Pesquisa");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione", "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" }));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 450, 190));
+
+        cbEstado.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione", "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" }));
+        jPanel1.add(cbEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 100, 20));
 
         jLabel2.setText("Cidade");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, 20));
+        jPanel1.add(txCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 240, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btPesquisar))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(btPesquisar)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
-        );
+        btCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botão cadastrar.png"))); // NOI18N
+        btCadastrar.setBorder(null);
+        btCadastrar.setBorderPainted(false);
+        jPanel1.add(btCadastrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 330, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, -1, -1));
+        btCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botão cancelar.png"))); // NOI18N
+        btCancelar.setBorder(null);
+        btCancelar.setBorderPainted(false);
+        jPanel1.add(btCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, -1, -1));
 
-        setBounds(0, 0, 410, 308);
+        btExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botão excluir.png"))); // NOI18N
+        btExcluir.setBorder(null);
+        btExcluir.setBorderPainted(false);
+        jPanel1.add(btExcluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 330, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 510, 390));
+
+        setBounds(0, 0, 573, 447);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btCadastrar;
+    private javax.swing.JButton btCancelar;
+    private javax.swing.JButton btExcluir;
     private javax.swing.JButton btPesquisar;
-    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JComboBox cbEstado;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTable tbPesqCidade;
+    private javax.swing.JTextField txCidade;
     // End of variables declaration//GEN-END:variables
 }
