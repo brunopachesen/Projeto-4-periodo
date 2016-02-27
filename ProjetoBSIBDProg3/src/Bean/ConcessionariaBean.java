@@ -11,9 +11,9 @@ package Bean;
  */
 public class ConcessionariaBean {
     
-   private String idConcessionaria;
+   private int idConcessionaria;
    private String cnpj;
-   private String endereco;
+   private EnderecoBean endereco;
    private String telefone;
    private String nome;
    private CidadeBean cidade;
@@ -21,14 +21,14 @@ public class ConcessionariaBean {
     /**
      * @return the idConcessionaria
      */
-    public String getIdConcessionaria() {
+    public int getIdConcessionaria() {
         return idConcessionaria;
     }
 
     /**
      * @param idConcessionaria the idConcessionaria to set
      */
-    public void setIdConcessionaria(String idConcessionaria) {
+    public void setIdConcessionaria(int idConcessionaria) {
         this.idConcessionaria = idConcessionaria;
     }
 
@@ -49,14 +49,14 @@ public class ConcessionariaBean {
     /**
      * @return the endereco
      */
-    public String getEndereco() {
+    public EnderecoBean getEndereco() {
         return endereco;
     }
 
     /**
      * @param endereco the endereco to set
      */
-    public void setEndereco(String endereco) {
+    public void setEndereco(EnderecoBean endereco) {
         this.endereco = endereco;
     }
 

@@ -10,9 +10,9 @@ package Bean;
  * @author Bruno
  */
 public class ClienteBean {
-   private String idCliente;
+   private int idCliente;
    private String cpf;
-   private String endereco;
+   private EnderecoBean endereco;
    private String telefone;
    private String nome;
    private CidadeBean cidade;
@@ -21,14 +21,14 @@ public class ClienteBean {
     /**
      * @return the idCliente
      */
-    public String getIdCliente() {
+    public int getIdCliente() {
         return idCliente;
     }
 
     /**
      * @param idCliente the idCliente to set
      */
-    public void setIdCliente(String idCliente) {
+    public void setIdCliente(int idCliente) {
         this.idCliente = idCliente;
     }
 
@@ -49,14 +49,14 @@ public class ClienteBean {
     /**
      * @return the endereco
      */
-    public String getEndereco() {
+    public EnderecoBean getEndereco() {
         return endereco;
     }
 
     /**
      * @param endereco the endereco to set
      */
-    public void setEndereco(String endereco) {
+    public void setEndereco(EnderecoBean endereco) {
         this.endereco = endereco;
     }
 

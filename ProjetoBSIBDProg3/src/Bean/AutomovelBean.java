@@ -11,7 +11,7 @@ package Bean;
  */
 public class AutomovelBean {
     
-    private String idAutomovel;
+    private int idAutomovel;
     private ModeloBean modelo;
     private String cor;
     private String Chassi;
@@ -20,14 +20,14 @@ public class AutomovelBean {
     /**
      * @return the idAutomovel
      */
-    public String getIdAutomovel() {
+    public int getIdAutomovel() {
         return idAutomovel;
     }
 
     /**
      * @param idAutomovel the idAutomovel to set
      */
-    public void setIdAutomovel(String idAutomovel) {
+    public void setIdAutomovel(int idAutomovel) {
         this.idAutomovel = idAutomovel;
     }
 

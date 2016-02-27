@@ -10,9 +10,9 @@ package Bean;
  * @author Bruno
  */
 public class MontadoraBean {
-   private String idFabrica;
+   private int idFabrica;
    private String cnpj;
-   private String endereco;
+   private EnderecoBean endereco;
    private String telefone;
    private String nome;
    private CidadeBean cidade;
@@ -20,14 +20,14 @@ public class MontadoraBean {
     /**
      * @return the idFabrica
      */
-    public String getIdFabrica() {
+    public int getIdFabrica() {
         return idFabrica;
     }
 
     /**
      * @param idFabrica the idFabrica to set
      */
-    public void setIdFabrica(String idFabrica) {
+    public void setIdFabrica(int idFabrica) {
         this.idFabrica = idFabrica;
     }
 
@@ -48,14 +48,14 @@ public class MontadoraBean {
     /**
      * @return the endereco
      */
-    public String getEndereco() {
+    public EnderecoBean getEndereco() {
         return endereco;
     }
 
     /**
      * @param endereco the endereco to set
      */
-    public void setEndereco(String endereco) {
+    public void setEndereco(EnderecoBean endereco) {
         this.endereco = endereco;
     }
 

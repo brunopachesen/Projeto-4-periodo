@@ -11,7 +11,7 @@ package Bean;
  */
 public class TransportadoraBean {
     
-   private String idTransportadora;
+   private int idTransportadora;
    private String nome;
    private String endereco;
    private String telefone;
@@ -19,14 +19,14 @@ public class TransportadoraBean {
     /**
      * @return the idTransportadora
      */
-    public String getIdTransportadora() {
+    public int getIdTransportadora() {
         return idTransportadora;
     }
 
     /**
      * @param idTransportadora the idTransportadora to set
      */
-    public void setIdTransportadora(String idTransportadora) {
+    public void setIdTransportadora(int idTransportadora) {
         this.idTransportadora = idTransportadora;
     }
 

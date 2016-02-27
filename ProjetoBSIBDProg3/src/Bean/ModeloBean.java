@@ -10,20 +10,20 @@ package Bean;
  * @author Bruno
  */
     public class ModeloBean {
-   private String idModelo;
+   private int idModelo;
    private String nome;
 
     /**
      * @return the idModelo
      */
-    public String getIdModelo() {
+    public int getIdModelo() {
         return idModelo;
     }
 
     /**
      * @param idModelo the idModelo to set
      */
-    public void setIdModelo(String idModelo) {
+    public void setIdModelo(int idModelo) {
         this.idModelo = idModelo;
     }
 

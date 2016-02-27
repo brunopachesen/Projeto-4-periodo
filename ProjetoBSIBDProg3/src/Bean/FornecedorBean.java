@@ -11,22 +11,22 @@ package Bean;
  */
 public class FornecedorBean {
     
-    private String idFornecedor;
+    private int idFornecedor;
     private String cnpj;
     private String telefone;
-    private String endereço;
+    private EnderecoBean endereco;
 
     /**
      * @return the idFornecedor
      */
-    public String getIdFornecedor() {
+    public int getIdFornecedor() {
         return idFornecedor;
     }
 
     /**
      * @param idFornecedor the idFornecedor to set
      */
-    public void setIdFornecedor(String idFornecedor) {
+    public void setIdFornecedor(int idFornecedor) {
         this.idFornecedor = idFornecedor;
     }
 
@@ -59,16 +59,21 @@ public class FornecedorBean {
     }
 
     /**
-     * @return the endereço
+     * @return the endereco
      */
-    public String getEndereço() {
-        return endereço;
+    public EnderecoBean getEndereco() {
+        return endereco;
     }
 
     /**
-     * @param endereço the endereço to set
+     * @param endereco the endereco to set
      */
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+    public void setEndereco(EnderecoBean endereco) {
+        this.endereco = endereco;
     }
+
+    /**
+     * @return the endereço
+     */
+
 }
