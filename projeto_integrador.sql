@@ -49,7 +49,7 @@ create table tb_cliente
 
 create table tb_fabrica
 (
-	id_fabrica int not null auto_increment primary key,
+	id_fab int not null auto_increment primary key,
     nome varchar(40),
     cnpj varchar(15),    
     tel varchar(10),
@@ -94,8 +94,8 @@ create table tb_forn_fab
 (
 	id_forn_fab int not null auto_increment primary key,
     id_forn int not null,
-    id_fabrica int not null, 
+    id_fab int not null, 
     foreign key (id_forn) references tb_fornecedor(id_forn),
-    foreign key (id_fabrica) references tb_fabrica(id_fabrica)
+    foreign key (id_fab) references tb_fabrica(id_fab)
 
 );
