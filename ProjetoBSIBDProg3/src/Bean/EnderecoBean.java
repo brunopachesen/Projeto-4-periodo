@@ -12,7 +12,7 @@ package Bean;
 public class EnderecoBean {
     
     private int idEndereco;
-    private int idCidade;
+    private CidadeBean Cidade;
     private String rua;
     private String num;
 
@@ -33,15 +33,15 @@ public class EnderecoBean {
     /**
      * @return the idCidade
      */
-    public int getIdCidade() {
-        return idCidade;
+    public CidadeBean getCidade() {
+        return Cidade;
     }
 
     /**
      * @param idCidade the idCidade to set
      */
-    public void setIdCidade(int idCidade) {
-        this.idCidade = idCidade;
+    public void setCidade(CidadeBean Cidade) {
+        this.Cidade = Cidade;
     }
 
     /**

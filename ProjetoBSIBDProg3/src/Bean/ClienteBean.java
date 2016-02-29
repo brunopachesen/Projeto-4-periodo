@@ -15,7 +15,6 @@ public class ClienteBean {
    private EnderecoBean endereco;
    private String telefone;
    private String nome;
-   private CidadeBean cidade;
    private AutomovelBean automovel;
 
     /**
@@ -91,16 +90,7 @@ public class ClienteBean {
     /**
      * @return the cidade
      */
-    public CidadeBean getCidade() {
-        return cidade;
-    }
-
-    /**
-     * @param cidade the cidade to set
-     */
-    public void setCidade(CidadeBean cidade) {
-        this.cidade = cidade;
-    }
+    
 
     /**
      * @return the automovel
