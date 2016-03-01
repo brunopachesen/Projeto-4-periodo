@@ -25,7 +25,7 @@ public class ClienteDAO {
    public static void inserir(ClienteBean cliente) throws SQLException{
 
            Connection con = Conexao.getConexao();
-           String sql = "insert into tb_cliente (nome_cli,tel,id_auto,id_end) values (?,?,?,?)";
+           String sql = "insert into tb_cliente (nome_cli,tel,cpf,id_auto,id_end) values (?,?,?,?,?)";
            PreparedStatement stmt = con.prepareStatement(sql);
            stmt.setString(1, cliente.getNome());
            stmt.setString(2, cliente.getTelefone());

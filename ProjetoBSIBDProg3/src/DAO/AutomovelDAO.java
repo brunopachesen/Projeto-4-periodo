@@ -6,6 +6,7 @@
 package DAO;
 
 import Bean.AutomovelBean;
+import Bean.ModeloBean;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -68,6 +69,7 @@ public class AutomovelDAO {
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
                 AutomovelBean automovel = new AutomovelBean();
+                automovel.setModelo(new ModeloBean());
                 automovel.setIdAutomovel(rs.getInt("id_auto"));
                 automovel.setCor((rs.getString("cor")));
                 automovel.setChassi((rs.getString("chassi")));
@@ -100,5 +102,26 @@ public class AutomovelDAO {
             stmt.close();
             con.close();
             return listaAutomovel;
+        }
+        
+        public static AutomovelBean pesquisar(String chassi) throws SQLException {
+            AutomovelBean automovel = new AutomovelBean();
+            automovel.setModelo(new ModeloBean());
+            Connection con = Conexao.getConexao();
+            String sql = "select id_auto, cor, chassi, ano, nome_mod from tb_automovel inner join tb_modelo on tb_automovel.id_mod=tb_modelo.id_mod where chassi='"+chassi+"'";
+            PreparedStatement stmt = con.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+            automovel.setIdAutomovel(rs.getInt("id_auto"));
+            automovel.setCor((rs.getString("cor")));
+            automovel.setChassi((rs.getString("chassi")));
+            automovel.setAno((rs.getInt("ano")));
+           // automovel.getModelo().setIdModelo((rs.getInt("id_mod")));
+            automovel.getModelo().setNome(rs.getString("nome_mod"));
+            }
+            rs.close();
+            stmt.close();
+            con.close();
+            return automovel;
         }      
 }
